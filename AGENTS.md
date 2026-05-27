@@ -1,18 +1,28 @@
 # AGENTS.md
 
-This repository is being audited only as a high-level architectural reference for building a MATLAB research-code MPM framework.
+This repository is being audited only as a high-level architectural reference.
 
 Do not modify source code unless explicitly requested.
 
 Do not translate Julia code into MATLAB.
 
+## Project context
+
+The goal is to design a MATLAB minimal production MPM host for geotechnical liquefaction modelling and possible future THM or staged multiphysics MPM problems.
+
+## Audit focus
+
 Focus only on:
 
-1. overall solver architecture;
-2. material model interface;
-3. user-defined fields and custom particle variables;
-4. plugin or modular design concepts;
-5. whether the design can inspire a MATLAB implementation for geotechnical THM or liquefaction MPM;
-6. which ideas are useful for MATLAB and which are too language-specific or over-engineered.
+1. modular solver architecture;
+2. particle fields and user-defined fields;
+3. material model interface;
+4. scalar and tensor internal-variable support;
+5. how custom particle-level state variables are added;
+6. staged or multiphysics extension ideas;
+7. ideas useful for a MATLAB research-code design;
+8. ideas that are too Julia-specific or over-engineered for MATLAB.
 
-Keep the audit concise.
+## Expected output
+
+Keep the audit concise. Do not analyse every file. Return a high-level architectural report and MATLAB design recommendations.
