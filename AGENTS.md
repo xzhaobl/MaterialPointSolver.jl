@@ -22,6 +22,7 @@ Focus only on:
 6. staged or multiphysics extension ideas;
 7. ideas useful for a MATLAB research-code design;
 8. ideas that are too Julia-specific or over-engineered for MATLAB.
+Also note whether existing material examples demonstrate scalar or tensor particle-state persistence, because this is relevant for later Liao state-variable storage.
 
 ## Expected output
 
